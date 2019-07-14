@@ -11,10 +11,14 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <!--Fixed menu bar with a white background. The buttons are empty right now but eventually
+      they will autoscroll to their section of the page.-->
+  <nav class="navbar-fixed-top navbar-dark" style="background-color:white;">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#"><h1>Puerto Nuevo</h1></a>
+        <a class="navbar-brand align-text-top" href="#">
+          <h1 style="margin-top: -5px; padding-bottom: 5px;">Puerto Nuevo</h1>
+        </a>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Home</a></li>
@@ -25,15 +29,18 @@
       </ul>
     </div>
   </nav>
-
+  <!--Contains a picture of the mexican flag. The colors are too dull so I'm going to replace
+      it eventually. This will also have parralax scroling after I figure out how to make that happen
+      bootstrap-->
   <div class="container">
     <div class="row">
       <div class="text-center">
-        <img class="col-sm-12" src="https://isaiah3031.github.io/PuertoNuevo/images/flag.jpg" style="width:80vw">
+        <img class="col-sm-12" src="https://isaiah3031.github.io/PuertoNuevo/images/street.jpg" style="width:80vw">
       </div>
     </div>
   </div>
-
+  <!--Contains a description of the website and is centered in the middle of the page. I think
+      The container is a touch too big and I'd like to add a pop of color to it somewhere.-->
   <div class="container">
     <div class="row text-center">
       <div class="col-lg-12" style="margin-top:18%; margin-bottom:18%;">
@@ -56,7 +63,8 @@
       </div>
     </div>
   </div>
-
+  <!--A Picture of tacos to break up the boring text and menu. THis will also parallax scroll
+  one day.-->
   <div class="container">
     <div class="row">
       <div class="text-center">
@@ -64,7 +72,8 @@
       </div>
     </div>
   </div>
-
+  <!--Contains the menu and an image, both take up half of the screen. The image will be a slideshow
+      later on-->
   <div class="container" style="margin-top:5%;">
     <div class="row">
       <div class="col-sm-10">
@@ -83,10 +92,11 @@
             Aucun plat n’est pimenté, si vous voulez que ça arrache, 
             demandez le à votre serveur(se), on a une pâte de piment maison!</p>
       </div>
-      <img class="col-sm-6" src="https://isaiah3031.github.io/PuertoNuevo/tacos.jpg">
+      <img class="col-sm-6" src="https://isaiah3031.github.io/PuertoNuevo/images/tacos.jpg">
 
       <div class="col-sm-6">
           
+        <!--Accordion style dropdown buttons that displays the menu and organizes it-->
           <div class="panel-group" id="accordion">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -130,6 +140,8 @@
       </div>
     </div>
   </div>
+
+  <!--Calling the collapse class for the menu.-->
   <script type="text/javascript">
       $('.collapse').collapse();
     </script>
