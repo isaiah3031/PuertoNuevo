@@ -1,0 +1,32 @@
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.navbar-brand{
+  color: #30C2DC;
+  background-color: none;
+}
+ h2{
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+}
+.about{
+  height: 100vh;
+}
+.lbrown{
+  color: #DBAD6C;
+}
+.dbrown{
+  color: #8F4620;
+}
+.green{
+  color: #008647;
+}
+.red{
+  color: #CE1126;
+}
+.blue{
+  color: #30C2DC;
+}
