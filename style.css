@@ -10,9 +10,6 @@ body{
   color: #30C2DC;
   background-color: none;
 }
-.no-bullets{
-  list-style-type: none;
-}
  h2{
   font-size: 40px;
 }
