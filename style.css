@@ -2,6 +2,10 @@
 body{
   font-family: 'Raleway', sans-serif;
 }
+.navbar{
+  background-color:white; 
+  z-index:1;
+}
 .navbar-brand{
   color: #30C2DC;
   background-color: none;
