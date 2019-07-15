@@ -35,3 +35,11 @@ p {
   color: white;
   background-color: #30C2DC;
 }
+.pink{
+  color: white;
+  background-color: #e4007c;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
