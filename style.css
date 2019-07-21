@@ -1,6 +1,6 @@
-
 body{
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 .navbar{
   background-color:white;
@@ -10,6 +10,23 @@ body{
   color: #30C2DC;
   background-color: none;
 }
+.image1{
+   background-image: url("http://dk67ws7rbunfc.cloudfront.net/mountains.jpg");
+}
+.image2{
+   background-image: url("http://dk67ws7rbunfc.cloudfront.net/colorful.jpg");
+}
+.parallax {
+  /* Set a specific height */
+  height: 600px;
+  width: 100%
+  margin: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
  h2{
   font-size: 40px;
 }
@@ -18,6 +35,17 @@ p {
 }
 .about{
   height: 100vh;
+}
+ul{
+  list-style: none;
+}
+.underline{
+  padding-bottom: 10%;
+  border-bottom-style: solid;
+  color: #e4007c;
+}
+.spaced{
+  padding: 2%;
 }
 .lbrown{
   color: #DBAD6C;
@@ -42,4 +70,20 @@ p {
 .center{
   margin-left: auto;
   margin-right: auto;
+}
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+.address{
+  font-size:30px;
 }
