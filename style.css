@@ -2,6 +2,7 @@ body{
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
 }
+
 .navbar{
   background-color:white;
   z-index:1;
@@ -16,16 +17,16 @@ body{
 .image2{
    background-image: url("http://dk67ws7rbunfc.cloudfront.net/colorful.jpg");
 }
-.parallax {
-  /* Set a specific height */
-  height: 600px;
-  width: 100%
-  margin: 0;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.parallax{
+    height: 600px;
+    width: 100%
+    margin: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
 }
  h2{
   font-size: 40px;
