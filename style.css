@@ -10,23 +10,27 @@ body{
 .navbar-brand{
   color: #30C2DC;
   background-color: none;
+  padding: 0;
 }
-.image1{
+.navbar-dark{
+  background-color:white;
+}
+#image1{
    background-image: url("http://dk67ws7rbunfc.cloudfront.net/mountains.jpg");
 }
-.image2{
+#image2{
    background-image: url("http://dk67ws7rbunfc.cloudfront.net/colorful.jpg");
 }
 .parallax{
     height: 600px;
-    width: 100%
+    background-size:100%, 100%;
     margin: 0;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    will-change: transform;
+}
+#about .title-section{
+  color:#e4007c;
 }
  h2{
   font-size: 40px;
@@ -34,16 +38,36 @@ body{
 p {
   font-size: 20px;
 }
-.about{
-  height: 100vh;
+#about{
+  margin-top:10%;
+  margin-bottom:10%;
+}
+#menu{
+  margin-top:5%;
+  margin-bottom:15%;
 }
 ul{
-  list-style: none;
+  list-style:none;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:322px;
+  width:825px;
+}
+.address{
+  font-size:30px;
 }
 .underline{
-  padding-bottom: 10%;
+  padding-bottom:10%;
   border-bottom-style: solid;
   color: #e4007c;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:322px;
+  width:825px;
 }
 .spaced{
   padding: 2%;
@@ -71,20 +95,4 @@ ul{
 .center{
   margin-left: auto;
   margin-right: auto;
-}
-.map-container-6{
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
-}
-.map-container-6 iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
-}
-.address{
-  font-size:30px;
 }

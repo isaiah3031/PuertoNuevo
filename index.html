@@ -3,21 +3,18 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <title>Puerto</title>
 </head>
 
 <!--Adjust section padding to make the menu more accurate. Maybe use sticky menu and put the brand on the image. Eventually smooth out scroll and have menu darken when over sections -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--Fixed menu bar with a white background. The buttons are empty right now but eventually they will autoscroll to their section of the page.-->
-  <nav class="navbar-fixed-top navbar-dark" style="background-color:white; padding: -5%;">
-    <div class="container-fluid">
+  <nav class="navbar-fixed-top navbar-dark container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand align-text-top" href="#">
-          <h1 style="margin-top: -5px; padding-bottom: 5px;">Puerto Nuevo</h1>
+          <h1>Puerto Nuevo</h1>
         </a>
       </div>
       <ul class="nav navbar-nav navbar-right">
@@ -27,44 +24,37 @@
         <li><a href="#photos">Photos</a></li>
         <li><a href="#find">Find Us</a></li>
       </ul>
-    </div>
   </nav>
-  <!-- This will also have parralax scroling after I figure out how to make that happen bootstrap-->
-  <div class="parallax image1">
-      
-  </div>
+  <div id="image1" class="parallax"></div>
   <!--Contains a description of the website and is centered in the middle of the page..-->
   <div id="about" class="container">
     <div class="row text-center">
-      <div class="col-lg-12" style="margin-top:5%; margin-bottom:5%;">
-        <h2 class="title-section" style="color:#e4007c"><strong>- About Us -</strong></h2>
+      <div class="col-lg-12">
+        <h2 class="title-section"><strong>- About Us -</strong></h2>
         <div class="text-center">
           <p>At Puerto Nuevo we are passionate about our made-from-scratch dishes, each one made from the heart and
-            crafted with pride
-            our exceptional staff. We use only the freshest, finest ingredients in all our dishes
+            crafted with pride our exceptional staff. We use only the freshest, finest ingredients in all our dishes
             from our scratch-made salsas, sauces, tortillas, and sides, to our hand-rolled enchiladas, traditional
             TexMex items and unique House Specialties. Extraordinary flavor, impeccable service and memorable
             experiences – plus everyday value. We invite you to discover new tastes, share, laugh, celebrate traditions,
-            make new ones, and to be our friend and neighbor. So come, stay awhile!</p>
+            make new ones, and to be our friend and neighbor. So come, stay a while!</p>
         </div>
       </div>
     </div>
   </div>
   <!--A Picture  to break up the boring text and menu. THis will also parallax scroll
   one day.-->
-  <div class="jumbotron fluid parallax image2"></div>
+  <div id="image2" class="parallax"></div>
   <!--Contains the menu, and an image, both take up half of the screen.
       Replace image with slide show
       Looked bad with the menu description but looks bald without it?-->
-  <div id="menu" class="container underline" style="margin-top:5%; margin-bottom:15%;">
+  <div id="menu" class="container underline">
     <div class="row">
-      <div class="col-sm-6" style="padding-top: 5%">
+      <div class="col-sm-6">
         <h1>MENU</h1>
       </div>
     </div>
     <div class="row">
-      
-
       <div class="col-sm-6">
 
         <!--Accordion style dropdown buttons that displays the menu and organizes it by type of food.
@@ -110,73 +100,64 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Dinner</a>
                   </h4>
                 </div>
-                <div id="collapse3" class="panel-collapse collapse in">
-                  <ul class="list-group list-group-flush no-bullets">
-                    <li class=" list-group">Supreme Nachos</li>
-                    <li class=" list-group">Shrimp Nachos</li>
-                    <li class=" list-group">Chimichanga a la Carte</li>
-                    <li class=" list-group">Guacamole</li>
-                    <li class=" list-group">Queso Fundido</li>
-                    <li class=" list-group">Bean Dip</li>
-                  </ul>
-                </div>
+              <div id="collapse3" class="panel-collapse collapse in">
+                <ul class="list-group list-group-flush no-bullets">
+                  <li class=" list-group">Supreme Nachos</li>
+                  <li class=" list-group">Shrimp Nachos</li>
+                  <li class=" list-group">Chimichanga a la Carte</li>
+                  <li class=" list-group">Guacamole</li>
+                  <li class=" list-group">Queso Fundido</li>
+                  <li class=" list-group">Bean Dip</li>
+                </ul>
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
-      <img class="col-sm-6 slide" src="http://dk67ws7rbunfc.cloudfront.net/tacos.jpg">
-    </div>
-    </div>
-    <!--Photo gallery-->
-    <div id="photos" class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <img class="col-sm-4 spaced" src="http://dk67ws7rbunfc.cloudfront.net/road.jpg">
-          <img class="col-sm-8 spaced" src="http://dk67ws7rbunfc.cloudfront.net/spread.jpg">
-        </div>
-        <div class="col-sm-12" style="padding-bottom: 5%">
-          <img class="col-sm-8 spaced" src="http://dk67ws7rbunfc.cloudfront.net/street.jpg">
-          <img class="col-sm-4 spaced" src="http://dk67ws7rbunfc.cloudfront.net/chips.jpg">
         </div>
       </div>
     </div>
-    <!--Add empty social media links and a phone number-->
-    <footer class="wn-footer" style="background-color= #30C2DC; height: 500%;">
-      <div class="row blue" >
-        
-        <div class="col-12" style="text-align: center">
-          <h1>Visit Us<br/></h1>
-        </div>
-        <div class="container">
-	<div class="row-fluid">
-        <div class="span8">
-        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
-    	</div>
-    	
-      	<div class="span4">
-    		  <h3>5555 mountain lane<br/>
-    		      Boone, NC 28608<br/>
-    		      (555)555-5555</h3>
-    		
-    	  </div>
+    <img class="col-sm-6" src="http://dk67ws7rbunfc.cloudfront.net/tacos.jpg">
+  </div>
+  </div>
+  <!--Photo gallery-->
+  <div id="photos" class="container">
+    <div class="row">
+      <img class="col-sm-4 spaced" src="http://dk67ws7rbunfc.cloudfront.net/road.jpg">
+      <img class="col-sm-8 spaced" src="http://dk67ws7rbunfc.cloudfront.net/spread.jpg">
     </div>
-</div>
+    <div class="row">
+      <img class="col-sm-8 spaced" src="http://dk67ws7rbunfc.cloudfront.net/street.jpg">
+      <img class="col-sm-4 spaced" src="http://dk67ws7rbunfc.cloudfront.net/chips.jpg">
+    </div>
+  </div>
+  
+  <!--Add empty social media links and a phone number-->
+  <footer class="wn-footer">
+    <div class="row blue" >
+        <h1>Visit Us<br/></h1>
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span8">
+          	<div class="mapouter center">
+          	  <div class="gmap_canvas"><iframe width="825" height="322" id="gmap_canvas" src="https://maps.google.com/maps?q=appalachian%20state&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a>
+          	  </div>
+          	</div>
+        	</div>
+        	<div class="span4">
+      		  <h3>5555 mountain lane<br/>
+      		      Boone, NC 28608<br/>
+      		      (555)555-5555</h3>
+        	</div>
+        </div>
       </div>
-    </footer>
-    <!--Calling the collapse class for the menu.-->
-    <script type="text/javascript">
-      $('.collapse').collapse();
-      jarallax(document.querySelectorAll('.jarallax'), {
-        speed: 0.2
-      });
-      
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</body>
-
-
+    </div>
+  </footer>
+  <!--Calling the collapse class for the menu.-->
+  <script type="text/javascript">
+  </script>
+  <!-- link to aws cloudfront CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</html>
